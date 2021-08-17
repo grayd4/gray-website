@@ -6,11 +6,15 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
+import { ProfessionalComponent } from './professional/professional.component';
+import { PersonalComponent } from './personal/personal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    AboutComponent,
+    ProfessionalComponent,
+    PersonalComponent
   ],
   imports: [
     BrowserModule,
