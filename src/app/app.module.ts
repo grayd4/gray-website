@@ -7,6 +7,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,6 +34,8 @@ import { HomeComponent } from './home/home.component';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   //exports:[MatTabsModule],
   providers: [],
