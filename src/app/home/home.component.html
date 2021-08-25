@@ -1,46 +1,29 @@
 
 <!-- Toolbar -->
 <mat-toolbar>
-
-    Responsive side navigation
+    Daniel Gray
 </mat-toolbar>
 
     <mat-sidenav-container>
         <mat-sidenav mode="side" opened>
-            <button mat-button class="menu-button">
-                <mat-icon>home</mat-icon>
-                <span>Home</span>
-            </button>
-            <button mat-button class="menu-button">
-                <mat-icon>person</mat-icon>
-                <span>Profile</span>
-            </button>
-            <button mat-button class="menu-button">
-                <mat-icon>info</mat-icon>
+            <button mat-button (click)="sideMenuClick('')" class="menu-button">
+                <mat-icon>face</mat-icon>
                 <span>About</span>
             </button>
-    
-            <mat-divider></mat-divider>
-    
-            <button mat-button class="menu-button">
-                <mat-icon>help</mat-icon>
-                <span>Help</span>
+            <button mat-button (click)="sideMenuClick('professional')" class="menu-button">
+                <mat-icon>person</mat-icon>
+                <span>Professional</span>
+            </button>
+            <button mat-button (click)="sideMenuClick('personal')" class="menu-button">
+                <mat-icon>explore</mat-icon>
+                <span>Personal</span>
             </button>
     
         </mat-sidenav>
         
         <mat-sidenav-content>
             <div class="content mat-elevation-z8">
-
-                <div class="tabs">
-                    <mat-tab-group mat-align-tabs="center" animationDuration="0ms">
-                        <mat-tab label="About"><app-about></app-about></mat-tab>
-                        <mat-tab label="Professional"><app-professional></app-professional></mat-tab>
-                        <mat-tab label="Personal"><app-personal></app-personal></mat-tab>
-                        <mat-tab label="tab4"><app-personal></app-personal></mat-tab>
-                    </mat-tab-group>
-                </div>
-                
+               <router-outlet></router-outlet>
             </div>
         
         </mat-sidenav-content>
