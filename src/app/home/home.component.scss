@@ -1,6 +1,7 @@
 mat-toolbar {
     background: #5B8266;
     color: white;
+    border-radius: 10px;
 }
 
 mat-sidenav {
@@ -20,12 +21,8 @@ mat-sidenav {
     margin: 16px;
     margin-left: 32px;
 
-    display: flex;
     justify-content: center;
     align-items: center;
-
-    font-size: 2rem;
-    color: lightgray;
 }
 
 mat-sidenav-container {
@@ -42,4 +39,12 @@ mat-sidenav-container {
     mat-icon {
         margin-right: 8px;
     }
+}
+
+router-outlet {
+   margin:auto; 
+}
+
+.spacer {
+    flex: 1 1 auto;
 }

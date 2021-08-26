@@ -1,0 +1,31 @@
+.banner-image {
+    max-width: 100%;
+    height: auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin: auto;
+}
+
+.banner-div {
+    position: relative;
+}
+
+// TODO fix text wrapping on small windows
+.banner-img-text {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    //font-size: xxx-large;
+    //font-size: 2rem;
+    font-size: calc(100% + 3vw);
+    color: lightgray;
+}
+
+.text {
+    //text-indent: 3em;
+    line-height: 1.5;
+    font-size: large;
+    // top right bottom left
+    margin: 30px 80px 30px 80px;
+}
