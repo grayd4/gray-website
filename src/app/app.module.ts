@@ -16,6 +16,9 @@ import { AboutComponent } from './about/about.component';
 import { ProfessionalComponent } from './professional/professional.component';
 import { PersonalComponent } from './personal/personal.component';
 import { HomeComponent } from './home/home.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ThisSiteComponent } from './professional-subcomp/this-site/this-site.component';
+import { KeyboardComponent } from './professional-subcomp/keyboard/keyboard.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,9 @@ import { HomeComponent } from './home/home.component';
     AboutComponent,
     ProfessionalComponent,
     PersonalComponent,
-    HomeComponent
+    HomeComponent,
+    ThisSiteComponent,
+    KeyboardComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +42,8 @@ import { HomeComponent } from './home/home.component';
     MatDividerModule,
     MatTooltipModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   //exports:[MatTabsModule],
   providers: [],

@@ -3,11 +3,14 @@
 <mat-toolbar>
     Daniel Gray
     <span class="spacer"></span>
-    <button mat-icon-button class="example-icon" #tooltip="matTooltip" matTooltip="Youtube">
+    <button mat-icon-button class="example-icon" #tooltip="matTooltip" matTooltip="Youtube" (click)="toolBarIconClick('youtube')">
         <mat-icon>video_library</mat-icon>
     </button>
-    <button mat-icon-button class="example-icon" #tooltip="matTooltip" matTooltip="LinkedIn">
+    <button mat-icon-button class="example-icon" #tooltip="matTooltip" matTooltip="LinkedIn" (click)="toolBarIconClick('linkedin')">
         <mat-icon>group_add</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" #tooltip="matTooltip" matTooltip="Github" (click)="toolBarIconClick('github')">
+        <mat-icon>code</mat-icon>
     </button>
 </mat-toolbar>
 
@@ -30,6 +33,7 @@
         
         <mat-sidenav-content>
             <div class="content mat-elevation-z8">
+                <div></div>
                <router-outlet></router-outlet>
             </div>
         
